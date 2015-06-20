@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8"/>
-<title>Programmer  <br>idées simples  <br>pensées complexes</title>
+<title>Programmer:  <br>idées simples  <br>pensées complexes</title>
 
 <link rel="stylesheet" href="./css/reveal.css"/>
 <link rel="stylesheet" href="./css/theme/moon.css" id="theme"/>
@@ -23,7 +23,7 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1>Programmer  <br>idées simples  <br>pensées complexes</h1>
+<h1>Programmer:  <br>idées simples  <br>pensées complexes</h1>
 <h2></h2>
 <h2><a href="mailto:teaching@bernard-hugueney.org">teaching@bernard-hugueney.org</a></h2>
 <h2></h2>
@@ -119,12 +119,12 @@ On va parler en Java™, mais pas de Java.
 <h3 id="orgheadline6"><span class="section-number-3">3.1</span> Code</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #a020f0;">class</span> <span style="color: #228b22;">SpaceInvaders</span> <span style="color: #a020f0;">extends</span> <span style="color: #228b22;">LearningGraphics</span> {
-    <span style="color: #a020f0;">public</span> <span style="color: #a020f0;">static</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">main</span>(<span style="color: #228b22;">String</span>[] <span style="color: #a0522d;">args</span>){
+<pre  class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">SpaceInvaders</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">LearningGraphics</span> {
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">main</span>(<span style="font-weight: bold; text-decoration: underline;">String</span>[] <span style="font-weight: bold; font-style: italic;">args</span>){
         launch(args);
     }
-    <span style="color: #a020f0;">public</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">run</span>(){
-        drawPixel(0, 0, <span style="color: #8b2252;">"green"</span>);
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">run</span>(){
+        drawPixel(0, 0, <span style="font-style: italic;">"green"</span>);
     }
 }
 </pre>
@@ -138,8 +138,8 @@ On va parler en Java™, mais pas de Java.
     blabla blabla blabla blabla b blalba bl blalba b
         blabla blalbla
     b
-    blabla <span style="color: #228b22;">b</span> 
-        <span style="color: #0000ff;">drawPixel</span>(0, 0, <span style="color: #8b2252;">"green"</span>);
+    blabla <span style="font-weight: bold; text-decoration: underline;">b</span> 
+        <span style="font-weight: bold;">drawPixel</span>(0, 0, <span style="font-style: italic;">"green"</span>);
     b
 .b
 </pre>
@@ -199,11 +199,11 @@ Trouver les erreurs pour chaque ligne :
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java">drawPixel(0, <span style="color: #8b2252;">"green"</span>, 0);
-drawpixel(0, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java">drawPixel(0, <span style="font-style: italic;">"green"</span>, 0);
+drawpixel(0, 0, <span style="font-style: italic;">"green"</span>);
 drawPixel(0, 0, green);
 drawPixel(0., 0, green);
-drawPixel(0, 0, <span style="color: #8b2252;">"green"</span>)
+drawPixel(0, 0, <span style="font-style: italic;">"green"</span>)
 </pre>
 </div>
 
@@ -237,7 +237,7 @@ de sous-expressions, qui peuvent elles-mêmes &hellip;)
 
 <div class="org-src-container">
 
-<pre  class="src src-java">drawPixel(0+0, (1+2)-(4-1), <span style="color: #8b2252;">"gr"</span>+<span style="color: #8b2252;">"e"</span>+<span style="color: #8b2252;">"en"</span>);
+<pre  class="src src-java">drawPixel(0+0, (1+2)-(4-1), <span style="font-style: italic;">"gr"</span>+<span style="font-style: italic;">"e"</span>+<span style="font-style: italic;">"en"</span>);
 </pre>
 </div>
 
@@ -252,9 +252,9 @@ récupérer cette valeur en utilisant la variable comme une expression
 
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>= 0;
-<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>= x;
-drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>= 0;
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>= x;
+drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 </pre>
 </div>
 
@@ -269,9 +269,9 @@ stocker que les valeurs de ce type dans la variable.
 
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>= <span style="color: #8b2252;">"green"</span>; <span style="color: #b22222;">// </span><span style="color: #b22222;">ceci est un commentaire</span>
-<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=<span style="color: #8b2252;">"z&#233;ro"</span>; <span style="color: #b22222;">// </span><span style="color: #b22222;">ne marche &#233;videmment pas</span>
-<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>= <span style="color: #8b2252;">"0"</span>; <span style="color: #b22222;">// </span><span style="color: #b22222;">ne marche pas non plus</span>
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>= <span style="font-style: italic;">"green"</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">ceci est un commentaire</span>
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=<span style="font-style: italic;">"z&#233;ro"</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">ne marche &#233;videmment pas</span>
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>= <span style="font-style: italic;">"0"</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">ne marche pas non plus</span>
 drawPixel(x, y, color);
 </pre>
 </div>
@@ -285,14 +285,14 @@ Un pixel ne se voit pas très bien.
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java">drawPixel(0, 0, <span style="color: #8b2252;">"green"</span>);
-drawPixel(1, 0, <span style="color: #8b2252;">"green"</span>);
-drawPixel(2, 0, <span style="color: #8b2252;">"green"</span>);
-drawPixel(3, 0, <span style="color: #8b2252;">"green"</span>);
-drawPixel(4, 0, <span style="color: #8b2252;">"green"</span>);
-drawPixel(5, 0, <span style="color: #8b2252;">"green"</span>);
-drawPixel(6, 0, <span style="color: #8b2252;">"green"</span>);
-drawPixel(7, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java">drawPixel(0, 0, <span style="font-style: italic;">"green"</span>);
+drawPixel(1, 0, <span style="font-style: italic;">"green"</span>);
+drawPixel(2, 0, <span style="font-style: italic;">"green"</span>);
+drawPixel(3, 0, <span style="font-style: italic;">"green"</span>);
+drawPixel(4, 0, <span style="font-style: italic;">"green"</span>);
+drawPixel(5, 0, <span style="font-style: italic;">"green"</span>);
+drawPixel(6, 0, <span style="font-style: italic;">"green"</span>);
+drawPixel(7, 0, <span style="font-style: italic;">"green"</span>);
 </pre>
 </div>
 
@@ -332,22 +332,22 @@ Pour que le code soit compréhensible, il est essentiel de bien choisir le nom !
 <h3 id="orgheadline19"><span class="section-number-3">6.1</span> Code</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>= 0;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
-x=1; <span style="color: #b22222;">// </span><span style="color: #b22222;">on ne red&#233;clare pas x, on le r&#233;utilise</span>
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>= 0;
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
+x=1; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">on ne red&#233;clare pas x, on le r&#233;utilise</span>
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x=2;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x=3;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x=4;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x=5;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x=6;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x=7;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 </pre>
 </div>
 <p>
@@ -362,22 +362,22 @@ fois on <b>fait la même chose</b> : on passe à la valeur suivante.
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>= 0;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>= 0;
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 </pre>
 </div>
 </section>
@@ -389,7 +389,7 @@ On y est presque ! Maintenant on peut dire à l'ordinateur de répéter :
 <div class="org-src-container">
 
 <pre  class="src src-java">x= x+1;
-drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 </pre>
 </div>
 <p>
@@ -397,7 +397,7 @@ ou
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java">drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java">drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 x= x+1;
 </pre>
 </div>
@@ -411,11 +411,11 @@ On indique la condition d'arrêt bien sûr:
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0;
-<span style="color: #a020f0;">do</span>{
-    drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0;
+<span style="font-weight: bold;">do</span>{
+    drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
     x=x+1;
-}<span style="color: #a020f0;">while</span>(x &lt;= 7);
+}<span style="font-weight: bold;">while</span>(x &lt;= 7);
 </pre>
 </div>
 </section>
@@ -427,8 +427,8 @@ plus concises de l'écrire. Par exemple :
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 }
 </pre>
 </div>
@@ -451,29 +451,29 @@ plus concises de l'écrire. Par exemple :
 <h3 id="orgheadline26"><span class="section-number-3">8.2</span> Code naïf</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 0, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 0, <span style="font-style: italic;">"green"</span>);
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 1, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 1, <span style="font-style: italic;">"green"</span>);
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 2, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 2, <span style="font-style: italic;">"green"</span>);
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 3, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 3, <span style="font-style: italic;">"green"</span>);
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 4, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 4, <span style="font-style: italic;">"green"</span>);
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 5, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 5, <span style="font-style: italic;">"green"</span>);
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 6, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 6, <span style="font-style: italic;">"green"</span>);
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, 7, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, 7, <span style="font-style: italic;">"green"</span>);
 }
 </pre>
 </div>
@@ -482,37 +482,37 @@ plus concises de l'écrire. Par exemple :
 <h3 id="orgheadline27"><span class="section-number-3">8.3</span> Même transformation</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>= 0;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>= 0;
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 y= y+1;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 y= y+1;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 y= y+1;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 y= y+1;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 y= y+1;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 y= y+1;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 y= y+1;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-    drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+    drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
 }
 </pre>
 </div>
@@ -521,9 +521,9 @@ y= y+1;
 <h3 id="orgheadline28"><span class="section-number-3">8.4</span> Boucles imbriquées</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>=0; y &lt;= 7; y= y+1){
-    <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; x &lt;= 7; x= x+1){
-        drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>=0; y &lt;= 7; y= y+1){
+    <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; x &lt;= 7; x= x+1){
+        drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
     }
 }
 </pre>
@@ -552,19 +552,19 @@ Parce que c'est une <i>fonction</i>.
 <h3 id="orgheadline30"><span class="section-number-3">9.1</span> Dessiner plusieurs blocs</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>=0; j &lt;= 7; y= y+1){
-    <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=0; j &lt;= 7; x= x+1){
-        drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>=0; j &lt;= 7; y= y+1){
+    <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=0; j &lt;= 7; x= x+1){
+        drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
     }
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>=8; j &lt;= 15; y= y+1){
-    <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=8; j &lt;= 15; x= x+1){
-        drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>=8; j &lt;= 15; y= y+1){
+    <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=8; j &lt;= 15; x= x+1){
+        drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
     }
 }
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>=0; j &lt;= 7; y= y+1){
-    <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>=8; j &lt;= 15; x= x+1){
-        drawPixel(x, y, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>=0; j &lt;= 7; y= y+1){
+    <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>=8; j &lt;= 15; x= x+1){
+        drawPixel(x, y, <span style="font-style: italic;">"green"</span>);
     }
 }
 </pre>
@@ -577,8 +577,8 @@ Dessin de n'importe quel carré :
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>= topLeftY; y &lt; <span style="color: #228b22;">topLeftY</span>+height; y= y+1){
-  <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>= topLeftX; x &lt; <span style="color: #228b22;">topLeftX</span>+width; x= x+1){
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>= topLeftY; y &lt; <span style="font-weight: bold; text-decoration: underline;">topLeftY</span>+height; y= y+1){
+  <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>= topLeftX; x &lt; <span style="font-weight: bold; text-decoration: underline;">topLeftX</span>+width; x= x+1){
     drawPixel(x, y, color);
   }
 }
@@ -586,10 +586,10 @@ Dessin de n'importe quel carré :
 </div>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">drawSquare</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">topLeftX</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">topLeftY</span>
-                              , <span style="color: #228b22;">int</span>  <span style="color: #a0522d;">width</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">height</span>
-                              , <span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>){
-<span style="color: #b22222;">//</span><span style="color: #b22222;">...</span>
+<pre  class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">drawSquare</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">topLeftX</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">topLeftY</span>
+                              , <span style="font-weight: bold; text-decoration: underline;">int</span>  <span style="font-weight: bold; font-style: italic;">width</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">height</span>
+                              , <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>){
+<span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">...</span>
 }
 </pre>
 </div>
@@ -604,8 +604,8 @@ Dessin de n'importe quel bloc d'un affichage "pixellisé" :
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>= row*BLOCK_SIZE; y &lt; <span style="color: #228b22;">topLeft</span>+ BLOCK_SIZE; y= y+1){
-  <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>= col*BLOCK_SIZE; x &lt; <span style="color: #228b22;">topLeft</span>+ BLOCK_SIZE; x= x+1){
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>= row*BLOCK_SIZE; y &lt; <span style="font-weight: bold; text-decoration: underline;">topLeft</span>+ BLOCK_SIZE; y= y+1){
+  <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>= col*BLOCK_SIZE; x &lt; <span style="font-weight: bold; text-decoration: underline;">topLeft</span>+ BLOCK_SIZE; x= x+1){
     drawPixel(x, y, color);
   }
 }
@@ -613,8 +613,8 @@ Dessin de n'importe quel bloc d'un affichage "pixellisé" :
 </div>
 <div class="org-src-container">
 
-<pre  class="src src-java">  <span style="color: #a020f0;">public</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">drawBlock</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">col</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">row</span>, <span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>){
-<span style="color: #b22222;">//</span><span style="color: #b22222;">...</span>
+<pre  class="src src-java">  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">drawBlock</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">col</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">row</span>, <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>){
+<span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">...</span>
 }
 </pre>
 </div>
@@ -627,7 +627,7 @@ Les deux.
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #a020f0;">static</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">drawBlock</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">col</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">row</span>, <span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>){
+<pre  class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">drawBlock</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">col</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">row</span>, <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>){
     drawSquare(col*BLOCK_SIZE, row*BLOCK_SIZE
                , BLOCK_SIZE, BLOCK_SIZE, color);
 }
@@ -657,13 +657,13 @@ peut le faire !
 <h3 id="orgheadline36"><span class="section-number-3">10.2</span> Code pour dessiner une ligne</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java">drawBlock(1, 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(2, 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(4, 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(5, 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(6, 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(8, 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(9, 3, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java">drawBlock(1, 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(2, 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(4, 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(5, 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(6, 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(8, 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(9, 3, <span style="font-style: italic;">"green"</span>);
 </pre>
 </div>
 <p>
@@ -676,21 +676,21 @@ d'accéder à différentes cases selon leur index.
 <h3 id="orgheadline37"><span class="section-number-3">10.3</span> Principe du tableau</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span>[] <span style="color: #a0522d;">row3</span>= {1, 2, 4, 5, 6, 8, 9};
-drawBlock(row3[0], 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(row3[1], 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(row3[2], 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(row3[3], 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(row3[4], 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(row3[5], 3, <span style="color: #8b2252;">"green"</span>);
-drawBlock(row3[6], 3, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span>[] <span style="font-weight: bold; font-style: italic;">row3</span>= {1, 2, 4, 5, 6, 8, 9};
+drawBlock(row3[0], 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(row3[1], 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(row3[2], 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(row3[3], 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(row3[4], 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(row3[5], 3, <span style="font-style: italic;">"green"</span>);
+drawBlock(row3[6], 3, <span style="font-style: italic;">"green"</span>);
 </pre>
 </div>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span>[] <span style="color: #a0522d;">row3</span>= {1, 2, 4, 5, 6, 8, 9};
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">index</span>=0; index &lt; row3.<span style="color: #228b22;">length</span>; index= index+1){
-    drawBlock(row3[index], 3, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span>[] <span style="font-weight: bold; font-style: italic;">row3</span>= {1, 2, 4, 5, 6, 8, 9};
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">index</span>=0; index &lt; row3.<span style="font-weight: bold; text-decoration: underline;">length</span>; index= index+1){
+    drawBlock(row3[index], 3, <span style="font-style: italic;">"green"</span>);
 }
 </pre>
 </div>
@@ -710,7 +710,7 @@ On peut (évidemment !) utiliser pour cela un tableau (de tableaux !) :
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span>[][] <span style="color: #a0522d;">spaceInvaderRows</span>=
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span>[][] <span style="font-weight: bold; font-style: italic;">spaceInvaderRows</span>=
 {{2,8}
  ,{3,7}
  ,{2,3,4,5,6,7,8}
@@ -719,10 +719,10 @@ On peut (évidemment !) utiliser pour cela un tableau (de tableaux !) :
  ,{0,2,3,4,5,6,7,8,10}
  ,{0,2,8,10}
  ,{3,4,6,7}};
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">r</span>=0; r &lt; spaceInvaderRows.<span style="color: #228b22;">length</span>; r= r+1){
-    <span style="color: #228b22;">int</span>[] <span style="color: #a0522d;">row</span>= spaceInvaderRows[r];
-    <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">index</span>=0; index &lt; row.<span style="color: #228b22;">length</span>; index= index+1){
-        drawBlock(row[index], r, <span style="color: #8b2252;">"green"</span>);
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">r</span>=0; r &lt; spaceInvaderRows.<span style="font-weight: bold; text-decoration: underline;">length</span>; r= r+1){
+    <span style="font-weight: bold; text-decoration: underline;">int</span>[] <span style="font-weight: bold; font-style: italic;">row</span>= spaceInvaderRows[r];
+    <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">index</span>=0; index &lt; row.<span style="font-weight: bold; text-decoration: underline;">length</span>; index= index+1){
+        drawBlock(row[index], r, <span style="font-style: italic;">"green"</span>);
     }
 }
 </pre>
@@ -736,9 +736,9 @@ tableau qui est dans une case d'un tableau :
 </p>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">r</span>=0; r &lt; spaceInvaderRows.<span style="color: #228b22;">length</span>; r= r+1){
-    <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">index</span>=0; index &lt; row.<span style="color: #228b22;">length</span>; index= index+1){
-        drawBlock(spaceInvaderRows[r][index], r, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">r</span>=0; r &lt; spaceInvaderRows.<span style="font-weight: bold; text-decoration: underline;">length</span>; r= r+1){
+    <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">index</span>=0; index &lt; row.<span style="font-weight: bold; text-decoration: underline;">length</span>; index= index+1){
+        drawBlock(spaceInvaderRows[r][index], r, <span style="font-style: italic;">"green"</span>);
     }
 }
 </pre>
@@ -778,9 +778,9 @@ en n'importe quel point (pixellisé) de la fenêtre.
 <h3 id="orgheadline42"><span class="section-number-3">11.1</span> fonction</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">drawSprite</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">col</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">row</span>, <span style="color: #228b22;">int</span>[][] <span style="color: #a0522d;">sprite</span>, <span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>){
-  <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">r</span>=0; r &lt; sprite.<span style="color: #228b22;">length</span>; r= r+1){
-      <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">index</span>=0; index &lt; <span style="color: #228b22;">sprite</span>[r].length; index= index+1){
+<pre  class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">drawSprite</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">col</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">row</span>, <span style="font-weight: bold; text-decoration: underline;">int</span>[][] <span style="font-weight: bold; font-style: italic;">sprite</span>, <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>){
+  <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">r</span>=0; r &lt; sprite.<span style="font-weight: bold; text-decoration: underline;">length</span>; r= r+1){
+      <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">index</span>=0; index &lt; <span style="font-weight: bold; text-decoration: underline;">sprite</span>[r].length; index= index+1){
           drawBlock(col+sprite[r][index], row+r, color);
       }
   }
@@ -811,8 +811,8 @@ Puisque que l'on a <i>implémenté</i> cela de façon générique/réutilisable.
 <h3 id="orgheadline44"><span class="section-number-3">12.1</span> une ligne d'envahisseurs</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">c</span>=0; c &lt; (nbPixelsWidth/BLOCK_SIZE)-(ALIEN_WIDTH+1); c= c + (ALIEN_WIDTH+1)){
-    drawSprite(c, 0, spaceInvaderSprite, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">c</span>=0; c &lt; (nbPixelsWidth/BLOCK_SIZE)-(ALIEN_WIDTH+1); c= c + (ALIEN_WIDTH+1)){
+    drawSprite(c, 0, spaceInvaderSprite, <span style="font-style: italic;">"green"</span>);
 }
 </pre>
 </div>
@@ -829,10 +829,10 @@ Puisque que l'on a <i>implémenté</i> cela de façon générique/réutilisable.
 <h3 id="orgheadline46"><span class="section-number-3">12.3</span> une vague d'envahisseur</h3>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #228b22;">int</span> <span style="color: #a0522d;">nbLines</span>= 4;
-<span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">line</span>=0; line &lt; <span style="color: #228b22;">nbLines</span>; line= line +1){
-  <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">c</span>=0; c &lt; (nbPixelsWidth/BLOCK_SIZE)-(ALIEN_WIDTH+1); c= c + (ALIEN_WIDTH+1)){
-      drawSprite(c, line*ALIEN_HEIGHT, spaceInvaderSprite, <span style="color: #8b2252;">"green"</span>);
+<pre  class="src src-java"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">nbLines</span>= 4;
+<span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">line</span>=0; line &lt; <span style="font-weight: bold; text-decoration: underline;">nbLines</span>; line= line +1){
+  <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">c</span>=0; c &lt; (nbPixelsWidth/BLOCK_SIZE)-(ALIEN_WIDTH+1); c= c + (ALIEN_WIDTH+1)){
+      drawSprite(c, line*ALIEN_HEIGHT, spaceInvaderSprite, <span style="font-style: italic;">"green"</span>);
   }
 </pre>
 </div>
@@ -851,28 +851,28 @@ Puisque que l'on a <i>implémenté</i> cela de façon générique/réutilisable.
 <h2 id="orgheadline49"><span class="section-number-2">13</span> Récapitulatif</h2>
 <div class="org-src-container">
 
-<pre  class="src src-java"><span style="color: #a020f0;">public</span> <span style="color: #a020f0;">class</span> <span style="color: #228b22;">SpaceInvaders</span> <span style="color: #a020f0;">extends</span> <span style="color: #228b22;">LearningGraphics</span> {
-    <span style="color: #a020f0;">public</span> <span style="color: #a020f0;">static</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">main</span>(<span style="color: #228b22;">String</span>[] <span style="color: #a0522d;">args</span>){
+<pre  class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">SpaceInvaders</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">LearningGraphics</span> {
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">main</span>(<span style="font-weight: bold; text-decoration: underline;">String</span>[] <span style="font-weight: bold; font-style: italic;">args</span>){
         launch(args);
     }
-    <span style="color: #a020f0;">public</span> <span style="color: #a020f0;">final</span> <span style="color: #a020f0;">static</span> <span style="color: #228b22;">int</span> <span style="color: #a0522d;">BLOCK_SIZE</span>= 8;
-    <span style="color: #a020f0;">public</span> <span style="color: #a020f0;">final</span> <span style="color: #a020f0;">static</span> <span style="color: #228b22;">int</span> <span style="color: #a0522d;">ALIEN_WIDTH</span>= 11;
-    <span style="color: #a020f0;">public</span> <span style="color: #a020f0;">final</span> <span style="color: #a020f0;">static</span> <span style="color: #228b22;">int</span> <span style="color: #a0522d;">ALIEN_HEIGHT</span>= 11;
-    <span style="color: #a020f0;">public</span>  <span style="color: #228b22;">void</span> <span style="color: #0000ff;">drawSquare</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">topLeftX</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">topLeftY</span>
-                            , <span style="color: #228b22;">int</span>  <span style="color: #a0522d;">width</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">height</span>
-                            , <span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>){
-        <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">y</span>= topLeftY; y &lt; <span style="color: #228b22;">topLeftY</span>+height; y= y+1){
-            <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">x</span>= topLeftX; x &lt; <span style="color: #228b22;">topLeftX</span>+width; x= x+1){
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">final</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">BLOCK_SIZE</span>= 8;
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">final</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">ALIEN_WIDTH</span>= 11;
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">final</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">ALIEN_HEIGHT</span>= 11;
+    <span style="font-weight: bold;">public</span>  <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">drawSquare</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">topLeftX</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">topLeftY</span>
+                            , <span style="font-weight: bold; text-decoration: underline;">int</span>  <span style="font-weight: bold; font-style: italic;">width</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">height</span>
+                            , <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>){
+        <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">y</span>= topLeftY; y &lt; <span style="font-weight: bold; text-decoration: underline;">topLeftY</span>+height; y= y+1){
+            <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">x</span>= topLeftX; x &lt; <span style="font-weight: bold; text-decoration: underline;">topLeftX</span>+width; x= x+1){
                 drawPixel(x, y, color);
             }
         }
     }
-    <span style="color: #a020f0;">public</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">drawBlock</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">col</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">row</span>, <span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>){
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">drawBlock</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">col</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">row</span>, <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>){
         drawSquare(col*BLOCK_SIZE, row*BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE, color);
     }
-    <span style="color: #a020f0;">public</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">drawSprite</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">col</span>, <span style="color: #228b22;">int</span> <span style="color: #a0522d;">row</span>, <span style="color: #228b22;">int</span>[][] <span style="color: #a0522d;">sprite</span>, <span style="color: #228b22;">String</span> <span style="color: #a0522d;">color</span>){
-        <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">r</span>=0; r &lt; sprite.<span style="color: #228b22;">length</span>; r= r+1){
-            <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">index</span>=0; index &lt; <span style="color: #228b22;">sprite</span>[r].length; index= index+1){
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">drawSprite</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">col</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">row</span>, <span style="font-weight: bold; text-decoration: underline;">int</span>[][] <span style="font-weight: bold; font-style: italic;">sprite</span>, <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">color</span>){
+        <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">r</span>=0; r &lt; sprite.<span style="font-weight: bold; text-decoration: underline;">length</span>; r= r+1){
+            <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">index</span>=0; index &lt; <span style="font-weight: bold; text-decoration: underline;">sprite</span>[r].length; index= index+1){
                 drawBlock(col+sprite[r][index], row+r, color);
             }
         }
@@ -883,8 +883,8 @@ Puisque que l'on a <i>implémenté</i> cela de façon générique/réutilisable.
 <section>
 <div class="org-src-container">
 
-<pre  class="src src-java">    <span style="color: #a020f0;">public</span> <span style="color: #228b22;">void</span> <span style="color: #0000ff;">run</span>(){
-        <span style="color: #228b22;">int</span>[][] <span style="color: #a0522d;">spaceInvaderSprite</span>=
+<pre  class="src src-java">    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">run</span>(){
+        <span style="font-weight: bold; text-decoration: underline;">int</span>[][] <span style="font-weight: bold; font-style: italic;">spaceInvaderSprite</span>=
             {{2,8}
              ,{3,7}
              ,{2,3,4,5,6,7,8}
@@ -893,13 +893,13 @@ Puisque que l'on a <i>implémenté</i> cela de façon générique/réutilisable.
              ,{0,2,3,4,5,6,7,8,10}
              ,{0,2,8,10}
              ,{3,4,6,7}};
-        <span style="color: #228b22;">int</span> <span style="color: #a0522d;">nbLines</span>= 4;
-        <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">line</span>=0; line &lt; <span style="color: #228b22;">nbLines</span>; line= line +1){
-            <span style="color: #a020f0;">for</span>(<span style="color: #228b22;">int</span> <span style="color: #a0522d;">c</span>=0;
+        <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">nbLines</span>= 4;
+        <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">line</span>=0; line &lt; <span style="font-weight: bold; text-decoration: underline;">nbLines</span>; line= line +1){
+            <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">c</span>=0;
                 c &lt; (nbPixelsWidth/BLOCK_SIZE)
                     -(ALIEN_WIDTH+1)
                     ; c= c + (ALIEN_WIDTH+1)){
-                drawSprite(c, line*ALIEN_HEIGHT, spaceInvaderSprite, <span style="color: #8b2252;">"green"</span>);
+                drawSprite(c, line*ALIEN_HEIGHT, spaceInvaderSprite, <span style="font-style: italic;">"green"</span>);
             }
         }
     }
